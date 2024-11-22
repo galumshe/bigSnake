@@ -1,0 +1,52 @@
+
+# Removing items from a list
+'''To remove items from a list in Python, you have several methods depending on how you want to remove the item:'''
+
+# To remove items from a list in Python, you have several methods depending on how you want to remove the item:
+
+# 1. Remove by Value: .remove(value)
+
+'''Removes the first occurrence of the specified value.
+Raises a ValueError if the value is not in the list.
+Example:'''
+
+my_list = [10, 20, 30, 40]
+my_list.remove(20)  # Removes the value 20
+print(my_list)
+# Output: [10, 30, 40]
+
+# 2. Remove by Index: del or .pop(index)
+
+'''del: Deletes the element at the specified index.
+
+.pop(index): Removes the element at the specified index and returns it.
+
+If no index is provided, .pop() removes the last item.
+Examples:'''
+my_list = [10, 20, 30, 40]
+
+# Using del
+del my_list[1]  # Removes the element at index 1 (20)
+print(my_list)
+# Output: [10, 30, 40]
+
+# Using pop
+removed_item = my_list.pop(2)  # Removes the element at index 2 (40) and returns it
+
+print(my_list)
+print("Removed:", removed_item)
+# Output:
+# [10, 20, 30]
+# Removed: 40
+
+
+# 3. Remove All Elements: .clear()
+'''Empties the entire list.
+Example:'''
+
+my_list = [10, 20, 30, 40]
+my_list.clear()  # Removes all elements
+print(my_list)
+# Output: []
+
+

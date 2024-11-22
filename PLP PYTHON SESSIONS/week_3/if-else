@@ -1,0 +1,11 @@
+a = 33
+# b = 26 it wont print with only if
+b = 296
+
+if a > b:
+    print("A is greater than B")
+    # the second one
+else:
+    print("A is less than B")
+
+    #  basic gradin
